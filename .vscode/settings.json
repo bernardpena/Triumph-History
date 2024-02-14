@@ -1,13 +1,20 @@
 {
-  "spellright.language": [
-    "es",
-    "en"
-  ],
+  "spellright.language": ["es", "en"],
   "spellright.documentTypes": [
     "markdown",
     "latex",
     "plaintext",
     "javascript",
     "html"
+  ],
+  "cSpell.words": [
+    "Bloor",
+    "Boton",
+    "Busqueda",
+    "Busquedafiltro",
+    "Daytona",
+    "Letraboton",
+    "Maximo",
+    "Pequena"
   ]
 }
