@@ -25,6 +25,7 @@ body{
     margin: 0px !important;
     /* height: 100vh; */
 }
+
 hr{
     width: 75%;
     color: var(--colorLetra);
@@ -83,7 +84,7 @@ nav  .section1{
 }
 
 .menu-hamburguesa:checked + .ul-link{
-    height: calc(30vh - var(--alturaHeader));
+    height: calc(20vh - var(--alturaHeader));
 }
 
 
@@ -173,6 +174,8 @@ main {
     align-items: center;
     width: 100%;
     gap: 15px;
+    /* opacity:  0.6; */
+    /* filter: grayscale(80%); */
 }
 
 section a{
@@ -180,23 +183,41 @@ section a{
     font-weight: bold;
     color: var(--colorLetra);
 }
+
 .card button{
     background-color: var(--fondoBoton);
     color: var(--colorLetraboton);
-    /* border-radius: 5px; */
+    border-radius: 5px;
     width:80px;
     height: 35px;
 }
 
-.card button:hover{
+/* .card button:hover{
     border-radius: 10px;
     transform: scale(1.2);
-}
+} */
 
 .imagen-card{
     width: 100%;
     align-items: center;
 }
+
+
+.card:hover .imagen-card {
+    filter: drop-shadow(10px 6px 55px #000000);
+-webkit-filter: drop-shadow(10px 6px 55px #000000);
+-moz-filter: drop-shadow(10px 6px 55px #000000);
+border-radius: 50px;
+
+    /* filter: grayscale(0%);
+    filter:saturate(100%);
+    opacity: 100%; */
+    transition: all 1s;
+
+}
+
+/* .card {
+    overflow:hidden;} */
 
 div .input-container{
     grid-area: contacto;
@@ -241,7 +262,7 @@ div .input-container{
 .input-container-input-nombre:is(:focus, :valid) {
     outline-color: blueviolet;
 }
-.input-container-input-enail:is(:focus, :valid) {
+.input-container-input-email:is(:focus, :valid) {
     outline-color: blueviolet;
 }
 
