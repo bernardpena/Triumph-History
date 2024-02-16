@@ -174,8 +174,6 @@ main {
     align-items: center;
     width: 100%;
     gap: 15px;
-    /* opacity:  0.6; */
-    /* filter: grayscale(80%); */
 }
 
 section a{
@@ -203,21 +201,15 @@ section a{
 }
 
 
-.card:hover .imagen-card {
-    filter: drop-shadow(10px 6px 55px #000000);
--webkit-filter: drop-shadow(10px 6px 55px #000000);
--moz-filter: drop-shadow(10px 6px 55px #000000);
-border-radius: 50px;
-
-    /* filter: grayscale(0%);
-    filter:saturate(100%);
-    opacity: 100%; */
+.imagen-card:hover  {
+    -webkit-transform:scale(1.1);
+    transform:scale(1.1);
     transition: all 1s;
-
 }
 
-/* .card {
-    overflow:hidden;} */
+.imagen-card {
+    overflow:hidden;
+}
 
 div .input-container{
     grid-area: contacto;

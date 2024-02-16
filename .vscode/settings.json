@@ -1,5 +1,8 @@
 {
-  "spellright.language": ["es", "en"],
+  "spellright.language": [
+    "en",
+    "es"
+  ],
   "spellright.documentTypes": [
     "markdown",
     "latex",
@@ -12,6 +15,7 @@
     "Boton",
     "Busqueda",
     "Busquedafiltro",
+    "Contactame",
     "contacto",
     "Daytona",
     "Letraboton",
