@@ -183,9 +183,14 @@ section a{
 .card button{
     background-color: var(--fondoBoton);
     color: var(--colorLetraboton);
-    border-radius: 5px;
+    /* border-radius: 5px; */
     width:80px;
     height: 35px;
+}
+
+.card button:hover{
+    border-radius: 10px;
+    transform: scale(1.2);
 }
 
 .imagen-card{
