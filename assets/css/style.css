@@ -25,17 +25,22 @@ body{
     margin: 0px !important;
     /* height: 100vh; */
 }
+hr{
+    width: 75%;
+    color: var(--colorLetra);
+}
 
 .grid-container{
     width: 100%;
     height: 100vh;
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 70px 400px 1fr 60px;
+    grid-template-rows: 70px 400px 1fr 250px 60px;
     grid-template-areas: 
     'nav'
     'history'
     'productos'
+    'contacto'
     'footer';
 }
 
@@ -54,14 +59,14 @@ ul{
 nav {
     grid-area: nav;
     background: var(--fondoNav);
-    width: 100%;
+    /* width: 100%; */
     height: 100%;
     
 }
 
 nav{
     display: flex;
-    /* height: 100%; */
+    height: 100%;
     font-weight: var(--LetraGrande);
     color: var(--fondoBusqueda);
     justify-content: space-between;
@@ -78,13 +83,15 @@ nav  .section1{
 }
 
 .menu-hamburguesa:checked + .ul-link{
-    height: calc(20vh - var(--alturaHeader));
+    height: calc(30vh - var(--alturaHeader));
 }
 
 
 .list_icon{
     color: var(--colorBlanco);
     cursor: pointer;
+    padding: 10px 10px;
+    /* gap: 10px 10px; */
     /* margin-right: 0.5rem; */
 }
 
@@ -119,7 +126,6 @@ nav  .section1{
 
 section{
     grid-area: history;
-    
 }
 
 .history{
@@ -168,6 +174,12 @@ main {
     width: 100%;
     gap: 15px;
 }
+
+section a{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--colorLetra);
+}
 .card button{
     background-color: var(--fondoBoton);
     color: var(--colorLetraboton);
@@ -181,20 +193,57 @@ main {
     align-items: center;
 }
 
-.navigation{
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    padding: 20px 0px;
+div .input-container{
+    grid-area: contacto;
+    width: 100%;
+    background-color: var(--fondoMain);
+    color: var(--colorLetra);
+    padding: 10px 0px;
 }
 
-.navigation button{
-    border:none;
-    background-color: var(--fondoBusquedafiltro);
-    color: var(--fondoBoton);
-    width: 30px;
-    height: 30px;
+.input-container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
 }
+
+.input-container input{
+    width: 80%;
+    margin: 10px 40px;
+}
+
+.input-container h3{
+    display: flex;
+    justify-content: center;
+    margin-top: 0;
+}
+
+.input-container-input {
+    color: var(--colorLetra);
+    padding: 10px;
+    /* border: none; */
+    border-radius: 4px;
+    outline: 2px solid white;
+    background-color: transparent;
+    transition: outline-color 500ms;
+}
+
+.input-container label{
+    display: flex;
+    justify-content: center;
+}
+
+.input-container-input-nombre:is(:focus, :valid) {
+    outline-color: blueviolet;
+}
+.input-container-input-enail:is(:focus, :valid) {
+    outline-color: blueviolet;
+}
+
+.input-container-input-mensaje:is(:focus, :valid) {
+    outline-color: blueviolet;
+}
+
 
 footer {
     grid-area: footer;
