@@ -92,8 +92,6 @@ nav  .section1{
     color: var(--colorBlanco);
     cursor: pointer;
     padding: 10px 10px;
-    /* gap: 10px 10px; */
-    /* margin-right: 0.5rem; */
 }
 
 .ul-link{
@@ -116,7 +114,6 @@ nav  .section1{
 .link{
     font-size: var(--letraPequena);
     color: var(--colorBlanco);
-    /* font-weight: bold; */
 }
 
 .logo{
@@ -149,7 +146,6 @@ section{
     padding: 5px 10px;
     margin: 0px;
 }
-
 
 main {
     grid-area: productos;
@@ -190,10 +186,10 @@ section a{
     height: 35px;
 }
 
-/* .card button:hover{
+.card button:hover{
     border-radius: 10px;
     transform: scale(1.2);
-} */
+}
 
 .imagen-card{
     width: 100%;
@@ -249,6 +245,7 @@ div .input-container{
 .input-container label{
     display: flex;
     justify-content: center;
+    font-weight: bold;
 }
 
 .input-container-input-nombre:is(:focus, :valid) {
