@@ -284,6 +284,9 @@ footer .icono{
     gap: 10px 10px;
     padding-bottom: 10px;
 }
+.icono a{
+    color: var(--colorBlanco);
+}
 
 footer span{
     display: flex;
