@@ -234,11 +234,13 @@ div .input-container {
 .input-container {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     width: 100%;
 }
 
 .input-container input {
-    width: 80%;
+    display: flex;
+    justify-content: center;
     margin: 10px 40px;
 }
 
@@ -413,11 +415,6 @@ footer span {
         color: var(--colorLetra);
         font-weight: bold;
         padding: 20px 0px;
-    }
-
-    .input-container input {
-        width: 70%;
-        margin-left: 150px;
     }
 
     footer {
